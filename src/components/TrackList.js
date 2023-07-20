@@ -4,8 +4,7 @@ import { AiFillPlayCircle, AiFillPauseCircle } from "react-icons/ai";
 import { IconContext } from "react-icons";
 
 function TrackList() {
-  const { trackList, currentTrackIndex, playTrack, isPlaying } =
-    useMusicPlayer();
+  const { trackList, currentTrackIndex, playTrack } = useMusicPlayer();
 
   return (
     <div className="track-list">
