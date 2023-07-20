@@ -4,7 +4,7 @@ import Controller from "./components/Controller";
 import Header from "./components/Header";
 import "./App.css";
 
-const App = () => {
+function App() {
   return (
     <MusicPlayerProvider>
       <div className="container">
@@ -14,6 +14,6 @@ const App = () => {
       </div>
     </MusicPlayerProvider>
   );
-};
+}
 
 export default App;

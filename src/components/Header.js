@@ -5,7 +5,7 @@ function Header() {
   const { currentTrackName } = useMusicPlayer();
   return (
     <div className="header">
-      <marquee>{currentTrackName}</marquee>
+      <div className="marquee">{currentTrackName}</div>
     </div>
   );
 }
