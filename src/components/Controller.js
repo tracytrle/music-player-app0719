@@ -24,7 +24,7 @@ function Controller() {
     }
   };
 
-  const handlePrevioushandleNextPlayPlay = () => {
+  const handlePreviousPlay = () => {
     playPreviousTrack();
   };
 
@@ -34,17 +34,13 @@ function Controller() {
 
   return (
     <div className="controller">
-      <button style={{ border: "none" }} onClick={handleNextPlay}>
+      <button onClick={handlePreviousPlay}>
         <IconContext.Provider value={{ size: "3em", color: "#7f8c8d" }}>
           <BiSkipPrevious />
         </IconContext.Provider>
       </button>
 
-      <button
-        style={{ border: "none" }}
-        className="playButton"
-        onClick={handleTogglePlay}
-      >
+      <button className="playButton" onClick={handleTogglePlay}>
         {!isPlaying ? (
           <IconContext.Provider value={{ size: "3em", color: "#7f8c8d" }}>
             <AiFillPlayCircle border="none" />
@@ -55,7 +51,7 @@ function Controller() {
           </IconContext.Provider>
         )}
       </button>
-      <button style={{ border: "none" }} onClick={handleNextPlay}>
+      <button onClick={handleNextPlay}>
         <IconContext.Provider value={{ size: "3em", color: "#7f8c8d" }}>
           <BiSkipNext />
         </IconContext.Provider>
